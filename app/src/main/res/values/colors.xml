@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="background">#FFAF70</color>
+    <color name="readBlue">#000040</color>
+    <color name="readWhite">#FFFF</color>
+    <color name="readButton">#448CF3</color>
+    <color name="dottedRectangle">#FF9933</color>
+    <color name="readRed">#FF0000</color>
+    <color name="readEditText">#E6E6EA</color>
+    <color name="editColor">#F5F6F8</color>
+    <color name="deleteColor">#FF7171</color>
+    <color name="textColor">#58585880</color>
+    <color name="orderBg">#F2F2F5</color>
+    <color name="movieColor">#FFFF00</color>
+    <color name="hintColor">#858585</color>
+    <color name="seeAllColor">#B0B5B9</color>
+    <color name="readFade">#FDF6ED</color>
+</resources>
