@@ -80,22 +80,37 @@ fun HomeScreen(navController: NavHostController) {
     val movieViewModel = viewModel<MovieViewModel>()
     val state = movieViewModel.state
 
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(colorResource(id = R.color.black))
-            .padding( vertical = 20.dp)
-    ) {
-        GreetingSection()
-        Spacer(modifier = Modifier.height(20.dp))
-        SearchSection()
-        Spacer(modifier = Modifier.height(20.dp))
-        DealsSection(state, movieViewModel,)
-        Spacer(modifier = Modifier.height(10.dp))
-        RecommendationSection(state, movieViewModel, navController)
-        Spacer(modifier = Modifier.height(10.dp))
-        BottomNavBar()
+    Box(modifier = Modifier.fillMaxWidth()) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(colorResource(id = R.color.black))
+                .padding( vertical = 20.dp)
+        ) {
+            GreetingSection()
+            Spacer(modifier = Modifier.height(20.dp))
+            SearchSection()
+            Spacer(modifier = Modifier.height(20.dp))
+            DealsSection(state, movieViewModel,)
+            Spacer(modifier = Modifier.height(10.dp))
+            RecommendationSection(state, movieViewModel, navController)
+            Spacer(modifier = Modifier.height(10.dp))
+
+        }
+
+        Column(
+            modifier = Modifier
+                .height(68.dp)
+                .fillMaxWidth()
+                .align(alignment = Alignment.BottomCenter)
+                .background(Color.White),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ){
+            BottomNavBar()
+        }
     }
+
 }
 
 @Composable
